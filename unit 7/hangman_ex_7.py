@@ -8,7 +8,11 @@ def check_win(secret_word, old_letters_guessed):
     return flag
  
 def show_hidden_word(secret_word, old_letters_guessed):
-    """bla bla bla"""
+    """function that get the secret word and list of letters that already entered, 
+       and print the correct letters in the word and '_' inn letters that have not yet been discover
+            :secret_word: word to find :str
+            :old_letters_gussed: list fo the letters that already entered:list
+            rtype:null"""
     letter=0
     for letter in range(0,len(secret_word)):
         if secret_word[letter] not in old_letters_guessed:
